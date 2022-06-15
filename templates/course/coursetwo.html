@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>welcome to {{cname | upper }}</h2>
+    {{ cname | length}} {% if cname == "apython" %}
+    <h2>if part</h2>
+    {% elif cname == "python" %}
+    <h2>if else is part</h2>
+    {% else %}
+    <h2>else part</h2>
+    {% endif %}
+
+    <h2>{{dt|date:'D d M Y'}}</h2>
+    <h2>{{dt|date:'SHORT_DATE_FORMAT'}}</h2>
+    <h2>{{dt|date:'TIME_FORMAT'}}</h2>
+  </body>
+</html>
